@@ -1,0 +1,16 @@
+Things to do:
+
+1. Activate MySQL
+
+2. Edit SQL:
+cd /usr/local/mysql/bin
+./mysql -u myuser -p
+
+
+3. Start Java
+cd ~/myWebProject/tomcat/bin  // Change directory to your Tomcat's binary directory
+./catalina.sh run             // Run catalina.sh to start tomcat server
+
+4. Edit Java Script
+cd ~/myWebProject/tomcat/webapps/hello/WEB-INF/classes
+javac -cp .:$HOME/myWebProject/tomcat/lib/servlet-api.jar QueryServlet.java

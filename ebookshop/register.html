@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>register</title>
+	<link rel="stylesheet" href="eshopstyle_template.css?v=2">
+</head>
+<body>
+	<div class = "header">
+		<h1> Registration Page </h1>
+	</div>
+
+	<div class = "navbar">
+		<a href = "Eshop.html">Store</a>
+		<form style="border: none; margin: 0; padding: 0;" method="POST" action="valcheckout">
+			<input type="submit" value="Checkout">
+		</form>
+		<form style="border: none; margin: 0; padding: 0;" method="POST" action="valinventory">
+			<input type="submit" value="Inventory">
+		</form>
+		<a href = "https://playvalorant.com/en-sg/">Play</a>
+		<a href = "login.html" class = "right">Login</a>
+	</div>
+
+	<div class = "row">
+		<div class = "side">
+		</div>
+
+		<div class = "main">
+			<div class = "container">
+				<h1>Registration</h1>
+				<form action = "RegisterServlet" method = "post">
+		  			<label >Username: </label><br>
+ 					<input type="text" name = "userId"><br>
+
+			  		<label>Password: </label><br>
+ 					<input type="password" name = "password"><br>
+
+ 					<label>Email: </label><br>
+ 					<input type="email" name = "email"><br>
+
+ 					<label>Phone Number: </label><br>
+ 					<input type="phone" name = "phone"><br><br>
+
+					<button type = "submit" >Register</button>
+				</form><br>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<h5> Made by JunPeng & HongYu </h5>
+	</div>
+	
+</body>
+</html>
+

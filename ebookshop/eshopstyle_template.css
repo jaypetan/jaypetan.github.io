@@ -1,0 +1,85 @@
+* {
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: Times, Times New Roman, serif;
+	}
+
+	/* to style the various boxes of website */
+	.header {
+		background: darkred url("Images/Valorant2.gif") no-repeat center;
+		padding: 40px;
+		text-align: left;
+		color: darkred;
+	}
+
+	.header h1{
+		font-size: 50px;
+	}
+
+	.header h2{
+		font-size: 20px;
+	}
+	.navbar {
+		overflow: hidden;
+		background-color: #333;
+	}
+
+	.navbar a, .navbar form{
+		float: left;
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 20px;
+		text-decoration: none;
+		font-size: 15px;
+	}
+
+	.navbar a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+
+	.navbar a.right {
+		float: right;
+	}
+
+	.navbar input[type="submit"] {
+    background-color: transparent; 
+    color: white; 
+    border: none;
+    padding: 14px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    cursor: pointer;
+    font-size: 15px;
+	}
+
+	.navbar input[type="submit"]:hover, .navbar input[type="button"]:hover {
+    	background-color: #ddd; 
+    	color: black; 
+	}
+
+	.row {
+		display: flex;
+	}
+
+	.side {
+		flex: 20%;
+		background-color: darkred;
+		padding: 40px;
+		color: lightgrey;
+	}
+
+	.main {
+		flex: 80%;
+		background-color: #f1f1f1;;
+		padding: 30px; 
+	}
+
+	.footer {
+		padding: 20px;
+		text-align: center;
+		background: #dddd;
+	}

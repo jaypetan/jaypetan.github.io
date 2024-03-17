@@ -1,0 +1,114 @@
+<html>
+<head>
+	<title>Valorant Market</title>	
+	<link rel="stylesheet" href="eshopstyle.css?v=3">
+</head>
+
+<body>
+	<div class = "header">
+		<h1> Valorant Market </h1>
+		<h2> Website to purchase gun skins </h2>
+	</div>
+
+	<div class = "navbar">
+		<a href = "Eshop.html">Store</a>
+		<form style="border: none; margin: 0; padding: 0;" method="POST" action="valcheckout">
+			<input type="submit" value="Checkout">
+		</form>
+		<form style="border: none; margin: 0; padding: 0;" method="POST" action="valinventory">
+			<input type="submit" value="Inventory">
+		</form>
+		<a href = "https://playvalorant.com/en-sg/">Play</a>
+		<a href = "login.html" class = "right">Login</a>
+	</div>
+
+	<div class = "row">
+
+		<div class = "side">
+			<h1> S H O P </h1>
+			<form method="POST" action="valorder">
+				<label for="gunType"> Gun Type: </label><br>
+				<select id="gunType" name="gunType">
+					<option value="">Choose Type</option>
+					<option value="Classic">Classic</option>
+					<option value="Sheriff">Sheriff</option>
+        			<option value="Spectre">Spectre</option>
+        			<option value="Vandal">Vandal</option>
+        			<option value="Phantom">Phantom</option>
+				</select><br>
+
+				<label for="skinType"> Gun Skin: </label><br>
+				<select id="skinType" name="skinType">
+					<option value="">Choose Skin</option>
+					<option value="Regular">Regular</option>
+					<option value="Red">Red</option>
+        			<option value="Sakura">Sakura</option>
+        			<option value="Prime">Prime</option>
+        			<option value="Glitchpop">Glitchpop</option>
+				</select><br><br>
+
+				<input type="submit" value="ADD TO CART" />
+			</form>
+		</div>
+
+		<div class = "main">
+			<h1> Gun Types: </h1>
+			<h2> Classic </h2>
+			<img id = "classic" src = "Images/Classic.png" style = " width:300px">
+			<h3> Cost: 0 </h3>
+			<button class = "button button1" onclick = "document.getElementById('classic').src = 'Images/Classic.png' "> No Skin <br> (+0) </button>
+			<button class = "button button2" onclick = "document.getElementById('classic').src = 'Images/Classic_Red.png' "> Red <br>(+200) </button>
+			<button class = "button button3" onclick = "document.getElementById('classic').src = 'Images/Classic_Sakura.png' "> Sakura <br>(+500) </button>
+			<button class = "button button4" onclick = "document.getElementById('classic').src = 'Images/Classic_Prime.png' "> Prime <br>(+800) </button>
+			<button class = "button button5" onclick = "document.getElementById('classic').src = 'Images/Classic_Glitchpop.png' "> Glitchpop <br>(+1000) </button>
+			<br>
+
+			<h2> Sheriff </h2>
+			<img id = "sheriff" src = "Images/Sheriff.png" style = " width:300px">
+			<h3> Cost: 800 </h3>
+			<button class = "button button1" onclick = "document.getElementById('sheriff').src = 'Images/Sheriff.png' "> No Skin <br> (+0) </button>
+			<button class = "button button2" onclick = "document.getElementById('sheriff').src = 'Images/Sheriff_Red.png' "> Red <br> (+200) </button>
+			<button class = "button button3" onclick = "document.getElementById('sheriff').src = 'Images/Sheriff_Sakura.png' "> Sakura <br> (+500) </button>
+			<button class = "button button4" onclick = "document.getElementById('sheriff').src = 'Images/Sheriff_Prime.png' "> Prime <br> (+800) </button>
+			<button class = "button button5" onclick = "document.getElementById('sheriff').src = 'Images/Sheriff_Glitchpop.png' "> Glitchpop <br> (+1000) </button>
+			<br>
+
+			<h2> Spectre </h2>
+			<img id = "spectre" src = "Images/Spectre.png" style = " width:300px">
+			<h3> Cost: 1600 </h3>
+			<button class = "button button1" onclick = "document.getElementById('spectre').src = 'Images/Spectre.png' "> No Skin <br> (+0) </button>
+			<button class = "button button2" onclick = "document.getElementById('spectre').src = 'Images/Spectre_Red.png' "> Red <br> (+200) </button>
+			<button class = "button button3" onclick = "document.getElementById('spectre').src = 'Images/Spectre_Sakura.png' "> Sakura <br> (+500) </button>
+			<button class = "button button4" onclick = "document.getElementById('spectre').src = 'Images/Spectre_Prime.png' "> Prime <br> (+800) </button>
+			<button class = "button button5" onclick = "document.getElementById('spectre').src = 'Images/Spectre_Glitchpop.png' "> Glitchpop <br> (+1000) </button>
+			<br>
+
+			<h2> Vandal </h2>
+			<img id = "vandal" src = "Images/Vandal.png" style = " width:300px">
+			<h3> Cost: 2900 </h3>
+			<button class = "button button1" onclick = "document.getElementById('vandal').src = 'Images/Vandal.png' "> No Skin <br> (+0) </button>
+			<button class = "button button2" onclick = "document.getElementById('vandal').src = 'Images/Vandal_Red.png' "> Red <br> (+200) </button>
+			<button class = "button button3" onclick = "document.getElementById('vandal').src = 'Images/Vandal_Sakura.png' "> Sakura <br> (+500) </button>
+			<button class = "button button4" onclick = "document.getElementById('vandal').src = 'Images/Vandal_Prime.png' "> Prime <br> (+800) </button>
+			<button class = "button button5" onclick = "document.getElementById('vandal').src = 'Images/Vandal_Glitchpop.png' "> Glitchpop <br> (+1000) </button>
+			<br>
+
+			<h2> Phantom </h2>
+			<img id = "phantom" src = "Images/Phantom.png" style = " width:300px">
+			<h3> Cost: 2900 </h3>
+			<button class = "button button1" onclick = "document.getElementById('phantom').src = 'Images/Phantom.png' "> No Skin <br> (+0) </button>
+			<button class = "button button2" onclick = "document.getElementById('phantom').src = 'Images/Phantom_Red.png' "> Red <br> (+200) </button>
+			<button class = "button button3" onclick = "document.getElementById('phantom').src = 'Images/Phantom_Sakura.png' "> Sakura <br> (+500) </button>
+			<button class = "button button4" onclick = "document.getElementById('phantom').src = 'Images/Phantom_Prime.png' "> Prime <br> (+800) </button>
+			<button class = "button button5" onclick = "document.getElementById('phantom').src = 'Images/Phantom_Glitchpop.png' "> Glitchpop <br> (+1000) </button>
+			<br>
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<h5> Made by JunPeng & HongYu </h5>
+	</div>
+
+</body>
+</html>
