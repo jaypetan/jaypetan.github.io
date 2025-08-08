@@ -12,6 +12,9 @@
   line-height: 1.5;
   font-weight: 400;
 
+  max-width: 1280px;
+  margin: 0 auto;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -26,6 +29,10 @@ h2 {
   @apply text-2xl sm:text-4xl font-playwrite;
 }
 
+h3 {
+  @apply text-base sm:text-xl;
+}
+
 p {
   @apply text-sm sm:text-lg;
 }
@@ -34,8 +41,12 @@ strong {
   @apply text-base sm:text-xl;
 }
 
+section {
+  @apply px-4 lg:px-8;
+}
+
 .subsection {
-  @apply flex flex-col gap-2 mt-4;
+  @apply flex flex-col gap-2 pt-4;
 }
 
 @media (prefers-color-scheme: light) {

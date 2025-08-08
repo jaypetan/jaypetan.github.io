@@ -1,4 +1,4 @@
-function AboutMe() {
+export default function AboutMe() {
   return (
     <>
       <h2>Hello!</h2>
@@ -18,5 +18,3 @@ function AboutMe() {
     </>
   );
 }
-
-export default AboutMe;
