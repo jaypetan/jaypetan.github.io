@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Pen+Script&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-nanum: "Nanum Pen Script", serif;
+  --font-playwrite: "Playwrite GB S", serif;
+  --font-monserrat: "Montserrat", sans-serif;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  @apply text-2xl sm:text-4xl font-playwrite;
+}
+
+p {
+  @apply text-sm sm:text-lg;
+}
+
+strong {
+  @apply text-base sm:text-xl;
+}
+
+.subsection {
+  @apply flex flex-col gap-2 mt-4;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
