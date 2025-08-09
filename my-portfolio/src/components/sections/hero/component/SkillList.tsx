@@ -13,11 +13,14 @@ export default function SkillList({ title, skills }: SkillListProps) {
   return (
     <div>
       {title && <h3 className="mt-2 mb-4">{title}: </h3>}
-      <ul>
+      <ul className="flex gap-4">
         {skills.map((skill) => (
-          <li key={skill.name}>
-            <img src={skill.image} alt={skill.name} className="icon" />
-            <p>{skill.name}</p>
+          <li
+            className="flex flex-col items-center min-w-16 gap-2"
+            key={skill.name}
+          >
+            <img src={skill.image} alt={skill.name} className="h-8" />
+            <p className="text-xs md:text-sm">{skill.name}</p>
           </li>
         ))}
       </ul>

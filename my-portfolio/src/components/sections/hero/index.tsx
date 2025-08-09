@@ -2,10 +2,10 @@ import Nav from "./component/Nav";
 import AboutMe from "./component/AboutMe";
 import Skillset from "./component/Skillset";
 
-function Hero() {
+export default function Hero() {
   return (
     <>
-      <section className="flex flex-col lg:grid grid-cols-2 h-dvh">
+      <section className="flex flex-col lg:grid grid-cols-2 h-[90dvh]">
         <div className="subsection">
           <Nav />
         </div>
@@ -24,5 +24,3 @@ function Hero() {
     </>
   );
 }
-
-export default Hero;

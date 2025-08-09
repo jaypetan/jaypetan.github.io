@@ -12,6 +12,8 @@
   line-height: 1.5;
   font-weight: 400;
 
+  scroll-behavior: smooth;
+
   max-width: 1280px;
   margin: 0 auto;
 
@@ -24,17 +26,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+h1 {
+  @apply text-3xl sm:text-5xl;
+}
 
 h2 {
-  @apply text-2xl sm:text-4xl font-playwrite;
+  @apply text-2xl sm:text-4xl;
 }
 
 h3 {
-  @apply text-base sm:text-xl;
+  @apply text-base sm:text-2xl;
 }
 
 p {
   @apply text-sm sm:text-lg;
+}
+
+.small-text {
+  @apply text-xs sm:text-base;
 }
 
 strong {

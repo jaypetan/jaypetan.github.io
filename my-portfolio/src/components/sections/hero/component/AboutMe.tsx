@@ -1,7 +1,7 @@
 export default function AboutMe() {
   return (
     <>
-      <h2>Hello!</h2>
+      <h2 className="font-playwrite">Hello!</h2>
       <p>
         My name is <strong className="italic">Tan Jun Peng.</strong>
       </p>

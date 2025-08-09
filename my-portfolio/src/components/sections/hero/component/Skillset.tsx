@@ -1,4 +1,3 @@
-import "./Skillset.css";
 import SkillList from "./SkillList";
 import reactLogo from "@/assets/react.svg";
 import viteLogo from "@/assets/vite.svg";

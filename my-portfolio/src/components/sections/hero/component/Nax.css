@@ -1,5 +1,0 @@
-@import "tailwindcss";
-
-a:hover {
-  @apply underline underline-offset-6;
-}
