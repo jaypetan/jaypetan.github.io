@@ -6,9 +6,9 @@ export default function AboutMe() {
         My name is <strong className="italic">Tan Jun Peng.</strong>
       </p>
       <p>
-        I'm a <strong>full-stack developer</strong> with{" "}
-        <strong>2 years</strong> of hands-on <strong> web development </strong>{" "}
-        experience. I love turning ideas into{" "}
+        I'm a <strong className="bg-primary px-2">full-stack developer</strong>{" "}
+        with <strong>2 years</strong> of hands-on{" "}
+        <strong> web development </strong> experience. I love turning ideas into{" "}
         <em>functional, visually engaging experiences</em> through{" "}
         <em>clean, performant</em> code. I have a passion for{" "}
         <strong>frontend design</strong> and <strong>user experience</strong>,

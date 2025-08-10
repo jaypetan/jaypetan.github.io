@@ -1,6 +1,6 @@
-import Experience from "./components/sections/experience";
-import Hero from "./components/sections/hero";
-import Project from "./components/sections/project";
+import Experience from "./components/experience";
+import Hero from "./components/hero";
+import Project from "./components/project";
 
 function App() {
   return (

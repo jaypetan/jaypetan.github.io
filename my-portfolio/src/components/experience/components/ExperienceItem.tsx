@@ -25,15 +25,15 @@ export default function ExperienceItem({
       onClick={() => setExperience(title)}
     >
       <div
-        className={`z-0 opacity-30 h-3/4 w-[90%] absolute top-1/8 transform -translate-x-[1rem] ${
+        className={`z-0 h-3/4 w-[90%] absolute top-1/8 transform -translate-x-[1rem] ${
           selectedExperience === title
-            ? "bg-gray-600"
+            ? "bg-primary"
             : hovered
-            ? "bg-gray-400"
+            ? "bg-secondary/50"
             : "bg-transparent"
         }`}
       />
-      <div className="z-10 border-2 border-black p-2 rounded-xl">
+      <div className="z-10 bg-white border-2 border-black p-2 rounded-xl">
         <img
           src={image}
           alt={title}

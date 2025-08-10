@@ -5,6 +5,9 @@
   --font-nanum: "Nanum Pen Script", serif;
   --font-playwrite: "Playwrite GB S", serif;
   --font-monserrat: "Montserrat", sans-serif;
+  --color-primary: #d8dbe9;
+  --color-secondary: #e4c8b4;
+  --color-light: #eeeeee;
 }
 
 :root {
@@ -61,6 +64,6 @@ section {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #fefefe;
   }
 }
