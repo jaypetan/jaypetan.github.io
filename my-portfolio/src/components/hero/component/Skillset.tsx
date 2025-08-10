@@ -34,7 +34,7 @@ export default function Skillset() {
   return (
     <>
       <h2>Skillset</h2>
-      <div className="flex flex-col flex-wrap">
+      <div className="flex flex-col flex-wrap gap-4">
         <SkillList title="Frontend Development" skills={frontendSkills} />
         <SkillList title="Backend Development" skills={backendSkills} />
       </div>
