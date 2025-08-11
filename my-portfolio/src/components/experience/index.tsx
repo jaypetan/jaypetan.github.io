@@ -2,9 +2,9 @@ import mentaiyaLogo from "@/assets/companies/mentaiyaLogo.png";
 import metevLogo from "@/assets/companies/metevLogo.png";
 import sarcLogo from "@/assets/companies/sarcLogo.svg";
 import ExperienceItem from "./components/ExperienceItem";
+import ExperienceDetails from "./components/ExperienceDetails";
 import VideoPlayer from "./components/VideoPlayer";
 import { useState } from "react";
-import SkillList from "../sharedComponents/SkillList";
 import nextLogo from "@/assets/brands/nextjs.svg";
 import reactLogo from "@/assets/brands/react.svg";
 import tailwindLogo from "@/assets/brands/tailwind.svg";
@@ -113,29 +113,11 @@ export default function Experience() {
             <VideoPlayer selectedExperience={selectedExperience} />
           </div>
           <div className="h-1/2 w-full flex flex-col items-end gap-2">
-            <p>
-              {
-                experiences.find((exp) => exp.title === selectedExperience)
-                  ?.date
-              }
-            </p>
-            <div className="border-t-2 border-primary w-full"></div>
-            <p
-              dangerouslySetInnerHTML={{
-                __html:
-                  experiences.find((exp) => exp.title === selectedExperience)
-                    ?.description || "",
-              }}
+            <ExperienceDetails
+              experience={experiences.find(
+                (exp) => exp.title === selectedExperience
+              )}
             />
-            <div className="mt-8 ">
-              <SkillList
-                title=""
-                skills={
-                  experiences.find((exp) => exp.title === selectedExperience)
-                    ?.skills || []
-                }
-              />
-            </div>
           </div>
         </div>
       </section>

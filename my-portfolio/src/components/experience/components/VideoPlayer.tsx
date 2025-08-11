@@ -53,7 +53,7 @@ export default function VideoPlayer({
         loop={playerState.loop}
         width="100%"
         height="100%"
-        className="bg-primary"
+        className="bg-primary pl-8 pr-2"
       />
     </>
   );

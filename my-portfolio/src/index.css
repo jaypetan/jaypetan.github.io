@@ -8,6 +8,7 @@
   --color-primary: #d8dbe9;
   --color-secondary: #e4c8b4;
   --color-light: #eeeeee;
+  --color-dark: #111111;
 }
 
 :root {
@@ -30,27 +31,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 h1 {
-  @apply text-3xl sm:text-5xl;
+  @apply text-3xl md:text-5xl;
 }
 
 h2 {
-  @apply text-2xl sm:text-4xl;
+  @apply text-2xl md:text-4xl;
 }
 
 h3 {
-  @apply text-base sm:text-2xl;
+  @apply text-base md:text-2xl;
 }
 
-p {
-  @apply text-sm sm:text-lg;
+p, a {
+  @apply text-sm md:text-lg;
 }
 
 .small-text {
-  @apply text-xs sm:text-base;
+  @apply text-xs md:text-base;
 }
 
 strong {
-  @apply text-base sm:text-xl;
+  @apply text-base md:text-xl;
 }
 
 section {
