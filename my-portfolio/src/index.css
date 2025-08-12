@@ -1,70 +1,81 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Pen+Script&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Pen+Script&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import 'tailwindcss';
 
 @theme {
-  --font-nanum: "Nanum Pen Script", serif;
-  --font-playwrite: "Playwrite GB S", serif;
-  --font-monserrat: "Montserrat", sans-serif;
-  --color-primary: #d8dbe9;
-  --color-secondary: #e4c8b4;
-  --color-light: #eeeeee;
-  --color-dark: #111111;
+    --font-nanum: 'Nanum Pen Script', serif;
+    --font-playwrite: 'Playwrite GB S', serif;
+    --font-monserrat: 'Montserrat', sans-serif;
+    --color-primary: #d8dbe9;
+    --color-secondary: #e4c8b4;
+    --color-light: #fefefe;
+    --color-dark: #213547;
 }
 
 :root {
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 
-  max-width: 1280px;
-  margin: 0 auto;
+    color-scheme: light dark;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    font-synthesis: none;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
+/* Based on Website Preference */
+@media (prefers-color-scheme: light) {
+    body {
+        @apply bg-light text-dark;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body {
+       @apply bg-dark text-light;
+    }
+}
+
+/* Manual Toggle */
+body.light {
+     @apply bg-light text-dark;
+}
+body.dark {
+     @apply bg-dark text-light;
+}
+
 h1 {
-  @apply text-3xl md:text-5xl;
+    @apply text-3xl md:text-5xl;
 }
 
 h2 {
-  @apply text-2xl md:text-4xl;
+    @apply text-2xl md:text-4xl;
 }
 
 h3 {
-  @apply text-base md:text-2xl;
+    @apply text-base md:text-2xl;
 }
 
-p, a {
-  @apply text-sm md:text-lg;
+p,
+a {
+    @apply text-sm md:text-lg;
 }
 
 .small-text {
-  @apply text-xs md:text-base;
+    @apply text-xs md:text-base;
 }
 
 strong {
-  @apply text-base md:text-xl;
+    @apply text-base md:text-xl;
 }
 
 section {
-  @apply px-4 lg:px-8;
+    @apply m-[0_auto] max-w-[1280px] px-4 lg:px-8;
 }
 
 .subsection {
-  @apply flex flex-col gap-2 pt-4;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #fefefe;
-  }
+    @apply flex flex-col gap-2 pt-4;
 }

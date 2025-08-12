@@ -115,7 +115,7 @@ export default function Experience() {
           <div className="h-1/2 w-full flex flex-col items-end gap-2">
             <ExperienceDetails
               experience={experiences.find(
-                (exp) => exp.title === selectedExperience
+                (exp) => exp.title === selectedExperience,
               )}
             />
           </div>

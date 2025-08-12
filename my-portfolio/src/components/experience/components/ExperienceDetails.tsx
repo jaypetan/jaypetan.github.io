@@ -1,4 +1,3 @@
-import React from "react";
 import SkillList from "../../sharedComponents/SkillList";
 
 interface Experience {
@@ -17,7 +16,9 @@ interface ExperienceDetailsProps {
   experience?: Experience; // optional in case no match found
 }
 
-export default function ExperienceDetails({ experience } : ExperienceDetailsProps ) {
+export default function ExperienceDetails({
+  experience,
+}: ExperienceDetailsProps) {
   if (!experience) return null;
 
   const { date, description, skills } = experience;

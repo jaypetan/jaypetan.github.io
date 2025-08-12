@@ -29,8 +29,8 @@ export default function ExperienceItem({
           selectedExperience === title
             ? "bg-primary"
             : hovered
-            ? "bg-secondary/50"
-            : "bg-transparent"
+              ? "bg-secondary"
+              : "bg-transparent"
         }`}
       />
       <div className="z-10 bg-white border-2 border-black p-2 rounded-xl">
@@ -42,7 +42,13 @@ export default function ExperienceItem({
           }`}
         />
       </div>
-      <div className="z-10 flex flex-col justify-center">
+      <div  className={`z-10 flex flex-col justify-center ${
+          selectedExperience === title
+            ? "text-dark"
+            : hovered
+              ? "text-dark"
+              : ""
+        }`}>
         <h3>{title}</h3>
         <p className="small-text">{role}</p>
       </div>
