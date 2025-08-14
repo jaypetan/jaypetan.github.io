@@ -19,8 +19,9 @@ export default function Light() {
 
     return (
         <div className="relative mx-4 sm:mb-4">
-            <div className={`${theme === 'light' ? "block opacity-80" : "opacity-0" } 
-            absolute top-2 -left-2 z-10 aspect-square h-3/5 rounded-full bg-yellow-200 shadow-[0px_0px_20px_10px] shadow-yellow-200`} />
+            <div
+                className={`${theme === 'light' ? 'opacity-80' : 'opacity-5'} hover: absolute top-2 -left-2 z-10 aspect-square h-3/5 rounded-full bg-yellow-200 shadow-[0px_0px_20px_10px] shadow-yellow-200`}
+            />
             <img
                 src={lightbulb}
                 alt="light-toggle"
