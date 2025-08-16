@@ -44,7 +44,6 @@ export default function Experience() {
             image: mentaiyaLogo,
             title: 'Mentai-Ya',
             role: 'Web Developer',
-            imagePadding: 'p-0',
             date: 'December 2024 - March 2025',
             description: `Created a responsive website using <strong>Vite</strong>, <strong>React</strong>, and <strong>TailwindCSS</strong>, enhancing user experience and engagement. <br/>
         Handled web design, development and maintenance, focusing on an attractive and user-friendly frontend. <br/>
@@ -89,14 +88,11 @@ export default function Experience() {
         },
     ]
     return (
-        <>
-            <section
-                className="flex min-h-dvh grid-cols-2 flex-col lg:grid"
-                id="experience"
-            >
+        <section id="experience" className="pt-4 lg:pt-8">
+            <h1 className="font-source-sans">Work Experiences</h1>
+            <div className="flex min-h-dvh grid-cols-2 flex-col lg:grid lg:grid-cols-[3fr_5fr]">
                 <div className="subsection">
-                    <h1>Work Experiences</h1>
-                    <ul className="mt-4 flex flex-col gap-4">
+                    <ul className="flex flex-col gap-2 lg:mt-4 lg:gap-4">
                         {experiences.map((exp) => (
                             <ExperienceItem
                                 key={exp.title}
@@ -119,7 +115,7 @@ export default function Experience() {
                         />
                     </div>
                 </div>
-            </section>
-        </>
+            </div>
+        </section>
     )
 }

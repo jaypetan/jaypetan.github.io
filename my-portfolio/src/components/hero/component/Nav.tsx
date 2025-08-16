@@ -4,24 +4,24 @@ import { faShare } from '@fortawesome/free-solid-svg-icons'
 export default function Nav() {
     return (
         <>
-            <p>
+            <p className="font-source-sans">
                 Jump to{' '}
                 <FontAwesomeIcon
                     icon={faShare}
                     className="rotate-90"
-                    size="sm"
+                    size="xs"
                 />
             </p>
             <a
-                className="hover:underline underline-offset-6"
+                className="underline-offset-6 hover:underline"
                 href="#experience"
             >
                 Work Experience
             </a>
-            <a className="hover:underline underline-offset-6" href="#projects">
+            <a className="underline-offset-6 hover:underline" href="#projects">
                 Projects
             </a>
-            <a className="hover:underline underline-offset-6" href="#contact">
+            <a className="underline-offset-6 hover:underline" href="#contact">
                 Contact Me
             </a>
         </>

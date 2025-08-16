@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Pen+Script&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Pen+Script&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 @import 'tailwindcss';
 
 @theme {
     --font-nanum: 'Nanum Pen Script', serif;
     --font-playwrite: 'Playwrite GB S', serif;
     --font-monserrat: 'Montserrat', sans-serif;
+    --font-source-sans: 'Source Sans 3', sans-serif;
+    --font-inter: 'Inter', sans-serif;
     --color-primary: #d8dbe9;
     --color-secondary: #e4c8b4;
     --color-light: #fefefe;
@@ -12,7 +14,7 @@
 }
 
 :root {
-    font-family: 'Montserrat', sans-serif;
+    @apply font-monserrat;
     line-height: 1.5;
     font-weight: 400;
 
@@ -35,24 +37,24 @@
 }
 @media (prefers-color-scheme: dark) {
     body {
-       @apply bg-dark text-light;
+        @apply bg-dark text-light;
     }
 }
 
 /* Manual Toggle */
 body.light {
-     @apply bg-light text-dark;
+    @apply bg-light text-dark;
 }
 body.dark {
-     @apply bg-dark text-light;
+    @apply bg-dark text-light;
 }
 
 h1 {
-    @apply text-3xl md:text-5xl;
+    @apply font-source-sans text-3xl md:text-5xl;
 }
 
 h2 {
-    @apply text-2xl md:text-4xl;
+    @apply font-source-sans text-2xl md:text-4xl;
 }
 
 h3 {
@@ -66,6 +68,10 @@ a {
 
 .small-text {
     @apply text-xs md:text-base;
+}
+
+header {
+    @apply text-2xl md:text-4xl;
 }
 
 strong {

@@ -25,7 +25,7 @@ export default function Light() {
             <img
                 src={lightbulb}
                 alt="light-toggle"
-                className="relative z-20 w-16 -rotate-25 hover:cursor-pointer active:scale-90 md:w-1/3 xl:w-1/4"
+                className="relative z-20 w-16 -rotate-25 hover:cursor-pointer active:scale-90 md:w-1/4"
                 onClick={toggleTheme}
             />
         </div>
