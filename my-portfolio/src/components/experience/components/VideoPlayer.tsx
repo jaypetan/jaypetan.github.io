@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import ReactPlayer from 'react-player'
 import sarcVideo from '@/assets/videos/sarcVideo.mp4'
 import metevVideo from '@/assets/videos/metevVideo.mp4'
@@ -32,28 +32,36 @@ export default function VideoPlayer({
     }
     const [playerState, setPlayerState] = useState<PlayerState>({
         src: videoURL[0].url,
-        playing: false,
+        playing: true,
         loop: true,
         controls: true,
     })
 
+    const videoRef = useRef<HTMLDivElement>(null)
+
     useEffect(() => {
-        const videoElement = document.getElementById('ExperienceVideo')
+        const videoElement = videoRef.current
         if (!videoElement) return
 
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
+                        setPlayerState((prev) => ({
+                            ...prev,
+                            playing: true, // Start playing when in viewport
+                        }))
                         console.log('Element is in viewport')
                     } else {
+                        setPlayerState((prev) => ({
+                            ...prev,
+                            playing: false,
+                        }))
                         console.log('Element is not in viewport')
                     }
                 })
             },
-            {
-                threshold: 0.1, // trigger when at least 10% visible
-            }
+            { threshold: 0.3 }
         )
 
         observer.observe(videoElement)
@@ -65,14 +73,13 @@ export default function VideoPlayer({
         // For example, pause video when URL changes
         setPlayerState((prev) => ({
             ...prev,
-            playing: true,
             src: videoURL.find((video) => video.title === selectedExperience)!
                 .url,
         }))
     }, [selectedExperience])
 
     return (
-        <>
+        <div ref={videoRef}>
             <ReactPlayer
                 id="ExperienceVideo"
                 src={playerState.src}
@@ -81,6 +88,6 @@ export default function VideoPlayer({
                 width="100%"
                 height="100%"
             />
-        </>
+        </div>
     )
 }
