@@ -51,17 +51,15 @@ export default function VideoPlayer({
                             ...prev,
                             playing: true, // Start playing when in viewport
                         }))
-                        console.log('Element is in viewport')
                     } else {
                         setPlayerState((prev) => ({
                             ...prev,
                             playing: false,
                         }))
-                        console.log('Element is not in viewport')
                     }
                 })
             },
-            { threshold: 0.3 }
+            { threshold: 0.3 } // When 0.3 of video is shown, the video will play if not will pause
         )
 
         observer.observe(videoElement)
@@ -87,6 +85,7 @@ export default function VideoPlayer({
                 loop={playerState.loop}
                 width="100%"
                 height="100%"
+                muted
             />
         </div>
     )
