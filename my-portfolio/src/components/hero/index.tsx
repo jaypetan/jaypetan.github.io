@@ -8,7 +8,7 @@ export default function Hero() {
         <>
             <section className="flex flex-col lg:grid lg:min-h-dvh lg:grid-cols-[3fr_5fr]">
                 <div className="my-4 flex flex-row-reverse justify-between gap-2 text-nowrap lg:flex-col">
-                    <div className="flex flex-col text-right text-nowrap lg:text-left">
+                    <div className="flex flex-col text-right text-nowrap lg:text-right">
                         <Nav />
                     </div>
                 </div>
