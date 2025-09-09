@@ -7,12 +7,11 @@ import Light from './component/Light'
 export default function Hero() {
     return (
         <>
-            <section className="flex flex-col lg:grid lg:min-h-[100dvh] lg:grid-cols-[3fr_5fr]">
+            <section className="flex flex-col lg:grid lg:min-h-dvh lg:grid-cols-[3fr_5fr]">
                 <div className="my-4 flex flex-row-reverse justify-between gap-2 text-nowrap lg:flex-col">
                     <div className="flex flex-col text-right text-nowrap lg:text-left">
                         <Nav />
                     </div>
-                    <Light />
                 </div>
                 <div className="flex flex-col gap-4">
                     <div className="flex flex-col-reverse sm:grid sm:grid-cols-2 xl:grid-cols-[2fr_3fr]">

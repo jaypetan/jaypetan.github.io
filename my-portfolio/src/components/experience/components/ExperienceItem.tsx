@@ -23,7 +23,7 @@ export default function ExperienceItem({
             onClick={() => setExperience(title)}
         >
             <div
-                className={`absolute top-1/8 z-0 h-3/4 w-[calc(100%+1rem)] -translate-x-[1rem] transform ${
+                className={`absolute top-1/8 z-0 h-3/4 w-[calc(100%+8rem)] -translate-x-[1rem] transform ${
                     selectedExperience === title
                         ? 'bg-primary'
                         : hovered

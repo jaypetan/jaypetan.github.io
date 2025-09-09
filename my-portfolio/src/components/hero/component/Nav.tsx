@@ -4,13 +4,9 @@ import { faShare } from '@fortawesome/free-solid-svg-icons'
 export default function Nav() {
     return (
         <>
-            <p className="font-source-sans">
+            <p className="font-source-sans font-bold">
                 Jump to{' '}
-                <FontAwesomeIcon
-                    icon={faShare}
-                    className="rotate-90"
-                    size="xs"
-                />
+               
             </p>
             <a
                 className="underline-offset-6 hover:underline"

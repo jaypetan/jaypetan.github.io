@@ -29,7 +29,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Based on Website Preference */
+/* Based on Website Preference 
 @media (prefers-color-scheme: light) {
     body {
         @apply bg-light text-dark;
@@ -41,12 +41,16 @@
     }
 }
 
-/* Manual Toggle */
 body.light {
     @apply bg-light text-dark;
 }
 body.dark {
     @apply bg-dark text-light;
+}
+    */
+
+body {
+    @apply bg-light text-dark;
 }
 
 h1 {
