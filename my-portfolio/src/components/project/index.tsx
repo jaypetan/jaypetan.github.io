@@ -39,7 +39,7 @@ export default function Project() {
             textColor: 'text-dark',
             backgroundColor: 'bg-primary',
             borderColor: 'border-primary',
-            linkColor: 'text-red-800',
+            linkColor: 'text-blue-800',
         },
         {
             title: 'Marvel Club Website',
@@ -61,7 +61,7 @@ export default function Project() {
                 className="flex flex-col pt-4 lg:pt-8"
             >
                 <h1>Projects</h1>
-                <div className={`mt-8 grid h-3/5 w-full grid-rows-${projectsData.length + 2} gap-4`}>
+                <div className="mt-8 grid w-full grid-rows-5 gap-4">
                     {projectsData.map((project, index) => (
                         <ProjectCard
                             key={index}
