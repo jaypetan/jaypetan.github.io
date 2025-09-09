@@ -22,36 +22,36 @@ export default function Project() {
                 { src: dontDrownImage2, alt: "Don't Drown 2" },
                 { src: dontDrownImage3, alt: "Don't Drown 3" },
             ],
-            textColor: 'white',
-            backgroundColor: 'black/90',
-            borderColor: 'black/90',
-            linkColor: 'secondary',
+            textColor: 'text-white',
+            backgroundColor: 'bg-black/90',
+            borderColor: 'border-black/90',
+            linkColor: 'text-secondary',
         },
         {
             title: 'EEE Garage Website',
             description: 'Web Development',
             link: 'https://garage-eee.com/',
             images: [
-                { src: eeeWeb1, alt: "EEE Web 1" },
-                { src: eeeWeb2, alt: "EEE Web 2" },
-                { src: eeeWeb3, alt: "EEE Web 3" },
+                { src: eeeWeb1, alt: 'EEE Web 1' },
+                { src: eeeWeb2, alt: 'EEE Web 2' },
+                { src: eeeWeb3, alt: 'EEE Web 3' },
             ],
-            textColor: 'dark',
-            backgroundColor: 'primary',
-            borderColor: 'primary',
-            linkColor: 'red-800',
+            textColor: 'text-dark',
+            backgroundColor: 'bg-primary',
+            borderColor: 'border-primary',
+            linkColor: 'text-red-800',
         },
         {
             title: 'Marvel Website',
             description: 'Web Development',
             images: [
-                { src: marvelWeb1, alt: "Marvel Web 1" },
-                { src: marvelWeb2, alt: "Marvel Web 2" },
-                { src: marvelWeb3, alt: "Marvel Web 3" },
+                { src: marvelWeb1, alt: 'Marvel Web 1' },
+                { src: marvelWeb2, alt: 'Marvel Web 2' },
+                { src: marvelWeb3, alt: 'Marvel Web 3' },
             ],
-            textColor: 'dark',
-            backgroundColor: 'secondary',
-            borderColor: 'secondary',
+            textColor: 'text-dark',
+            backgroundColor: 'bg-secondary',
+            borderColor: 'border-secondary',
         },
     ]
     return (
@@ -61,7 +61,7 @@ export default function Project() {
                 className="flex h-dvh min-h-dvh flex-col pt-4 lg:pt-8"
             >
                 <h1>Projects</h1>
-                <div className="mt-4 grid h-3/5 w-full grid-rows-5 gap-4">
+                <div className="mt-8 grid h-3/5 w-full grid-rows-5 gap-4">
                     {projectsData.map((project, index) => (
                         <ProjectCard
                             key={index}

@@ -29,22 +29,22 @@ export default function ProjectCard({
 
   return (
     <div
-      className={`${isSelected ? "row-span-3" : ""} border-${borderColor} w-full border-2 hover:scale-105 transition-transform duration-300 ease-in-out rounded-lg`}
+      className={`${isSelected ? "row-span-3" : ""} ${borderColor} w-full border-2 hover:scale-105 transition-transform duration-300 ease-in-out rounded-lg`}
     >
       <div
-        className={`bg-${backgroundColor} flex justify-between h-full p-4 hover:cursor-pointer relative overflow-hidden`}
+        className={`${backgroundColor} flex justify-between h-full p-4 hover:cursor-pointer relative overflow-hidden`}
         onClick={() =>
           isSelected ? setSelectedProject("") : setSelectedProject(title)
         }
       >
         {/* Text Section */}
-        <div className={`self-end z-10 text-${textColor}`}>
+        <div className={`self-end z-10 ${textColor}`}>
           <h3>{title}</h3>
           <p>{description}</p>
           {link && (
             <a
               href={link}
-              className={`hover:underline text-${linkColor} ${isSelected ? "" : "hidden"}`}
+              className={`hover:underline ${linkColor} ${isSelected ? "" : "hidden"}`}
             >
               {link}
             </a>
