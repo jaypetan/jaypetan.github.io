@@ -3,7 +3,7 @@ export default function Project() {
     const [selectedProject, setSelectedProject] = useState('')
     return (
         <>
-            <section className="flex h-dvh min-h-dvh flex-col">
+            <section id="projects" className="pt-4 lg:pt-8 flex h-dvh min-h-dvh flex-col">
                 <h1>Projects</h1>
                 <div className="mt-4 grid h-3/5 w-full grid-rows-5 gap-4">
                     <div
