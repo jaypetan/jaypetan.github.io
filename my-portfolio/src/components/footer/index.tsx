@@ -24,7 +24,7 @@ export default function Footer() {
         <>
             <footer
                 id="contact"
-                className="flex w-full flex-col items-center justify-center p-4 mt-8"
+                className="mt-8 flex w-full flex-col items-center justify-center p-4"
             >
                 <div className="flex gap-8 p-4">
                     {footerLinks.map((link, index) => (
@@ -32,6 +32,8 @@ export default function Footer() {
                             key={index}
                             href={link.url}
                             className="group relative"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <div className="bg-primary absolute bottom-1/2 left-1/2 hidden -translate-x-1/2 -translate-y-3/4 rounded-md px-2 py-1 group-hover:block">
                                 {link.text}
