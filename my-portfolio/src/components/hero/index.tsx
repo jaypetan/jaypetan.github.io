@@ -6,7 +6,7 @@ import heroPic from '@/assets/heroPic.jpg'
 export default function Hero() {
     return (
         <>
-            <section className="flex flex-col lg:grid lg:min-h-dvh lg:grid-cols-[3fr_5fr]">
+            <section className="flex flex-col lg:grid lg:min-h-dvh lg:grid-cols-[3fr_5fr] !mt-0">
                 <div className="my-4 flex flex-row-reverse justify-between gap-2 text-nowrap lg:flex-col">
                     <div className="flex flex-col text-right text-nowrap lg:text-left">
                         <Nav />
