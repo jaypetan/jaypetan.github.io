@@ -107,7 +107,7 @@ export default function Experience() {
                     <div className="min-h-1/2 w-full">
                         <VideoPlayer selectedExperience={selectedExperience} />
                     </div>
-                    <div className="flex h-1/2 w-full flex-col items-end gap-2">
+                    <div className="flex w-full flex-col items-end gap-2">
                         <ExperienceDetails
                             experience={experiences.find(
                                 (exp) => exp.title === selectedExperience

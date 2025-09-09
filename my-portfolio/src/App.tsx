@@ -1,4 +1,5 @@
 import Experience from './components/experience'
+import Footer from './components/footer'
 import Hero from './components/hero'
 import Project from './components/project'
 
@@ -8,6 +9,7 @@ function App() {
             <Hero />
             <Experience />
             <Project />
+            <Footer />
         </>
     )
 }

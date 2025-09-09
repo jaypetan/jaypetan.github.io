@@ -42,7 +42,7 @@ export default function Project() {
             linkColor: 'text-red-800',
         },
         {
-            title: 'Marvel Website',
+            title: 'Marvel Club Website',
             description: 'Web Development',
             images: [
                 { src: marvelWeb1, alt: 'Marvel Web 1' },
@@ -58,10 +58,10 @@ export default function Project() {
         <>
             <section
                 id="projects"
-                className="flex h-dvh min-h-dvh flex-col pt-4 lg:pt-8"
+                className="flex flex-col pt-4 lg:pt-8"
             >
                 <h1>Projects</h1>
-                <div className="mt-8 grid h-3/5 w-full grid-rows-5 gap-4">
+                <div className={`mt-8 grid h-3/5 w-full grid-rows-${projectsData.length + 2} gap-4`}>
                     {projectsData.map((project, index) => (
                         <ProjectCard
                             key={index}

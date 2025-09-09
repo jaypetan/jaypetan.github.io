@@ -4,7 +4,7 @@ import sarcVideo from '@/assets/videos/sarcVideo.mp4'
 import metevVideo from '@/assets/videos/metevVideo.mp4'
 import mentaiyaVideo from '@/assets/videos/mentaiyaVideo.mp4'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCirclePlay, faCirclePause } from '@fortawesome/free-solid-svg-icons'
+import { faCirclePause } from '@fortawesome/free-solid-svg-icons'
 
 export default function VideoPlayer({
     selectedExperience,
@@ -79,7 +79,7 @@ export default function VideoPlayer({
     }, [selectedExperience])
 
     return (
-        <div ref={videoRef} className="relative h-full w-full">
+        <div ref={videoRef} className="relative h-0 overflow-hidden pt-[56.25%] bg-black/50 rounded-lg w-full">
             <ReactPlayer
                 id="ExperienceVideo"
                 src={playerState.src}
@@ -87,7 +87,7 @@ export default function VideoPlayer({
                 loop={playerState.loop}
                 width="100%"
                 height="100%"
-                className='cursor-pointer'
+                className='cursor-pointer absolute top-0 left-0'
                 muted
                 onClick={() =>
                     setPlayerState((prev) => ({
