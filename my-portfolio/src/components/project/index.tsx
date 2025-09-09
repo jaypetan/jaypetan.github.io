@@ -11,7 +11,7 @@ import marvelWeb3 from '@/assets/projects/marvelWeb/marvelWeb3.png'
 import ProjectCard from './component/ProjectCard'
 
 export default function Project() {
-    const [selectedProject, setSelectedProject] = useState('')
+    const [selectedProject, setSelectedProject] = useState('Dont Drown')
     const projectsData = [
         {
             title: 'Dont Drown',
@@ -58,10 +58,10 @@ export default function Project() {
         <>
             <section
                 id="projects"
-                className="flex flex-col pt-4 lg:pt-8"
+                className="flex flex-col p-4 lg:p-8"
             >
                 <h1>Projects</h1>
-                <div className="mt-8 grid w-full grid-rows-5 gap-4">
+                <div className="mt-4 sm:mt-8 grid w-full grid-rows-5 gap-4">
                     {projectsData.map((project, index) => (
                         <ProjectCard
                             key={index}

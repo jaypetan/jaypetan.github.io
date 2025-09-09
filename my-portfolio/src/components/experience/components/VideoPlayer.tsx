@@ -29,12 +29,14 @@ export default function VideoPlayer({
     type PlayerState = {
         src: string
         playing: boolean
+        loading: boolean
         loop: boolean
         controls: boolean
     }
     const [playerState, setPlayerState] = useState<PlayerState>({
         src: videoURL[0].url,
         playing: true,
+        loading: false,
         loop: true,
         controls: true,
     })
@@ -79,7 +81,10 @@ export default function VideoPlayer({
     }, [selectedExperience])
 
     return (
-        <div ref={videoRef} className="relative h-0 overflow-hidden pt-[56.25%] bg-black/50 rounded-lg w-full">
+        <div
+            ref={videoRef}
+            className="relative h-0 w-full overflow-hidden rounded-lg bg-black/50 pt-[56.25%]"
+        >
             <ReactPlayer
                 id="ExperienceVideo"
                 src={playerState.src}
@@ -87,19 +92,38 @@ export default function VideoPlayer({
                 loop={playerState.loop}
                 width="100%"
                 height="100%"
-                className='cursor-pointer absolute top-0 left-0'
+                className="absolute top-0 left-0 cursor-pointer"
+                onWaiting={() =>
+                    setPlayerState((prev) => ({ ...prev, loading: false }))
+                }
+                onSeeking={() =>
+                    setPlayerState((prev) => ({ ...prev, loading: false }))
+                }
+                onPlaying={() =>
+                    setPlayerState((prev) => ({ ...prev, loading: true }))
+                }
+                playsInline
                 muted
+                aria-placeholder="Video player"
                 onClick={() =>
                     setPlayerState((prev) => ({
-                        ...prev, playing: !prev.playing,
+                        ...prev,
+                        playing: !prev.playing,
                     }))
                 }
+
             />
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
                 {!playerState.playing && (
-                    <FontAwesomeIcon icon={faCirclePause} className="text-6xl text-white opacity-70" />
+                    <FontAwesomeIcon
+                        icon={faCirclePause}
+                        className="text-6xl text-white opacity-70"
+                    />
                 )}
             </div>
+            <div
+                className={`${playerState.loading ? 'hidden' : ''} loader absolute inset-0 m-auto`}
+            />
         </div>
     )
 }

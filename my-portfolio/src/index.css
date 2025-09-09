@@ -50,7 +50,7 @@ body.dark {
     */
 
 body {
-    @apply bg-light text-dark;
+    @apply bg-light text-dark mx-auto w-full overflow-x-hidden;
 }
 
 h1 {
@@ -83,9 +83,24 @@ strong {
 }
 
 section {
-    @apply m-[0_auto] max-w-[1280px] px-4 lg:px-8;
+    @apply my-8 m-[0_auto] max-w-[1280px] px-4 lg:px-8 overflow-x-hidden;
 }
 
 .subsection {
     @apply flex flex-col gap-2 pt-4;
+}
+
+/* Loader CSS */
+.loader {
+  border: 16px solid rgba(0, 0, 0, 0); 
+  border-top: 16px solid var(--color-primary);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

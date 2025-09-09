@@ -24,7 +24,7 @@ export default function Footer() {
         <>
             <footer
                 id="contact"
-                className="flex w-full flex-col items-center justify-center p-4"
+                className="flex w-full flex-col items-center justify-center p-4 mt-8"
             >
                 <div className="flex gap-8 p-4">
                     {footerLinks.map((link, index) => (
