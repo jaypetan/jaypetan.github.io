@@ -2,7 +2,6 @@ import Nav from './component/Nav'
 import AboutMe from './component/AboutMe'
 import Skillset from './component/Skillset'
 import heroPic from '@/assets/heroPic.jpg'
-import Light from './component/Light'
 
 export default function Hero() {
     return (
