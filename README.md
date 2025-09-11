@@ -9,7 +9,7 @@ This site showcases my skills, experiences and projects in web/software developm
 
 ## 🛠️ Tech Stack
 - Responsive design for desktop & mobile
-- Built with [Vite](https://vitejs.dev/) + [React](https://react.dev/)
+- Built with [Vite](https://vitejs.dev/) + [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
 - Styled using [Tailwind CSS](https://tailwindcss.com/)
 - Deployed via [GitHub Pages](https://pages.github.com/)
 
