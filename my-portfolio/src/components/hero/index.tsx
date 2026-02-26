@@ -6,7 +6,7 @@ import heroPic from '@/assets/heroPic.jpg'
 export default function Hero() {
     return (
         <>
-            <section className="flex flex-col lg:grid lg:min-h-dvh lg:grid-cols-[3fr_5fr] !mt-0">
+            <section className="!mt-0 flex flex-col lg:grid lg:min-h-dvh lg:grid-cols-[3fr_5fr]">
                 <div className="my-4 flex flex-row-reverse justify-between gap-2 text-nowrap lg:flex-col">
                     <div className="flex flex-col text-right text-nowrap lg:text-left">
                         <Nav />
@@ -21,7 +21,7 @@ export default function Hero() {
                             <img
                                 src={heroPic}
                                 alt="Tan Jun Peng"
-                                className="aspect-square h-[20rem] w-[20rem] rounded-full object-cover lg:aspect-auto lg:h-full lg:w-[20rem] lg:rounded-none"
+                                className="aspect-square h-[20rem] w-[20rem] rounded-full object-cover lg:aspect-auto lg:h-[50dvh] lg:w-[20rem] lg:rounded-none"
                             />
                         </div>
                     </div>
