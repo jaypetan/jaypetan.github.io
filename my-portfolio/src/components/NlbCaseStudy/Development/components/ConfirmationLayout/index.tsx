@@ -7,11 +7,11 @@ export default function ConfirmationLayout() {
         <div className="flex flex-col gap-12">
             <h2 className="text-4xl font-bold">Confirmation</h2>
             <p className="text-gray-600">
-                The confirmation page was designed to provide users with a clear
-                and concise summary of their booking details, including the
-                booked seats and timing. This allows users to easily confirm
-                that their booking was successful and provides them with the
-                necessary information for their visit.
+                We transitioned from the current external email confirmation to
+                a native page. The confirmation page is designed to provide
+                users an immediate and clear summary of their booking details,
+                including the booked seats and timing. This allows users to
+                easily verify that their booking at a glance before their visit.
             </p>
             <div className="grid grid-cols-2 gap-8">
                 <img src={confirmationImage} alt="Confirmation Layout" />
@@ -19,7 +19,7 @@ export default function ConfirmationLayout() {
                     <Card
                         icon={faCheckCircle}
                         title="Confirmation"
-                        description="Displays seat booked and timing to show confirmation of booking "
+                        description="Displays essential booking details and confirms the booking."
                     />
                 </div>
             </div>

@@ -6,7 +6,7 @@ export default function WhySeatBooking() {
                 <>
                     Of students that use the NLB mobile application{' '}
                     <span className="font-bold">
-                        use the seat booking function
+                        use the seat booking function.
                     </span>
                 </>
             ),
@@ -17,7 +17,7 @@ export default function WhySeatBooking() {
                 <>
                     Of users found that seat booking function is the{' '}
                     <span className="font-bold">highest-impact</span> issue that
-                    needs to be improved in the NLB mobile application
+                    needs to be improved in the NLB mobile application.
                 </>
             ),
         },
@@ -25,12 +25,12 @@ export default function WhySeatBooking() {
 
     return (
         <div>
-            <h3 className="mb-12 text-gray-400">Why seat booking?</h3>
+            <h3 className="mb-12 text-gray-400">Why focus on seat booking?</h3>
             <div className="grid grid-cols-1 gap-24 lg:grid-cols-2">
                 {keyFindings.map((finding, index) => (
                     <div
                         key={index}
-                        className="grid grid-rows-[1fr_1fr] gap-24"
+                        className="grid grid-rows-[1fr_1fr] gap-12"
                     >
                         <div className="flex flex-col gap-4">
                             <h1 className="font-bold">{finding.value}%</h1>

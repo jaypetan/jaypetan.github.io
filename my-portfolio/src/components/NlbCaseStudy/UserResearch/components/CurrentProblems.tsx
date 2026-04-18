@@ -12,7 +12,7 @@ export default function CurrentProblems() {
 
     return (
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-            <div className="flex flex-col gap-4 text-end">
+            <div className="flex flex-col gap-12 text-end">
                 <h3 className="text-gray-400">
                     What are the current problems?
                 </h3>

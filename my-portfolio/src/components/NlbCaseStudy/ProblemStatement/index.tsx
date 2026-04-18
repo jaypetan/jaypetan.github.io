@@ -9,8 +9,8 @@ export default function ProblemStatement() {
                 <span className="font-bold text-orange-400">
                     seat booking experience
                 </span>{' '}
-                for <span className="font-bold">student users</span> of the NLB
-                mobile application ? ”
+                for <span className="font-bold">student users</span> of the
+                National Library Board (NLB) mobile application ? ”
             </h1>
         </div>
     )

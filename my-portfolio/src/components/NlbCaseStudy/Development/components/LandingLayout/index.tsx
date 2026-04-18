@@ -8,29 +8,32 @@ export default function LandingLayout() {
             icon: faBolt,
             title: 'Quick Actions',
             description:
-                'Added row at top of homepage for easy navigation to frequent pages.',
+                'Integrated a row at top of homepage as a shortcut for easy navigation to core pages.',
         },
         {
             icon: faObjectGroup,
             title: 'Defined Groups',
             description:
-                'Added labels and and grouping to elements to make it easier to navigate and find content.',
+                'Implemented defined grouping and clear labeling to make it easier to navigate and find content.',
         },
     ]
 
     return (
         <div className="flex flex-col gap-24">
             <div className="flex flex-col gap-12">
-                <h2 className="text-4xl font-bold">Landing</h2>
+                <h2 className="text-4xl font-bold">Landing Page</h2>
                 <p className="text-gray-600">
-                    The landing page in the original design was very
+                    The landing page in the original design was
                     information-dense, which made it difficult for users to
                     navigate around and find their desired page, and it required
-                    alot of scrolling and taps to get to the desired content. We
-                    redesigned the landing page to be more concise and easier to
-                    navigate, with clear sections with labels, and a prominent
-                    quick actions section that allows users to quickly access
-                    the most commonly used features.
+                    excessive scrolling and taps to get to their desired
+                    content.
+                </p>
+                <p>
+                    We redesigned the landing page to prioritize discoverability
+                    and navigation speed with clear section labeling, and
+                    introduced a prominent "Quick Actions" section that allows
+                    users to quickly access commonly used features.
                 </p>
             </div>
             <div className="grid grid-cols-2 justify-items-center gap-8">

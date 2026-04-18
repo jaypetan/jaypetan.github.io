@@ -18,31 +18,31 @@ export default function DesignProcess() {
             icon: faUsers,
             title: 'Empathize',
             description:
-                'Investigate user needs and identify pain points and define problems they face.',
+                'Investigate user needs and define problems users face in the NLB mobile application.',
             whatWeDid: [
-                '→ Attitudinal & Behavioral Testing through surveys, interviews and usability tests.',
-                '→ User Pain Point Identification',
+                '→ Conducted attitudinal & behavioral testing via surveys, interviews and usability tests.',
+                '→ User pain point identification.',
             ],
         },
         {
             icon: faLightbulb,
             title: 'Ideate',
             description:
-                'Find improvements and ways to develop from the data collected',
+                'Develop ideas for improvements and ways to develop based on the data collected.',
             whatWeDid: [
-                '→ Hybrid Card Sorting',
-                '→ User Journey Mapping',
-                '→ Idea generation',
+                '→ Rapid idea generation for potential solutions.',
+                '→ User Journey Mapping to visualize user flows.',
+                '→ Hybrid Card Sorting for information architecture.',
             ],
         },
         {
             icon: faLaptopCode,
             title: 'Develop',
             description:
-                'Iterative prototyping to showcase design and functionality',
+                'Create iterative prototypes to showcase visual design and functionality of the modified application.',
             whatWeDid: [
-                '→ Low-Fi Visual Wireframing',
-                '→ High-Fi Interactive Prototyping',
+                '→ Low-Fi Visual Wireframing for structure and layout.',
+                '→ High-Fi Interactive Prototyping for functionality and user testing.',
             ],
         },
     ]
@@ -50,6 +50,21 @@ export default function DesignProcess() {
     return (
         <div className="flex flex-col gap-12">
             <Header number="2" title="Design Process" />
+            <div>
+                <h2 className="font-bold">Research Objectives :</h2>
+                <p>
+                    To understand the existing problems in the NLB mobile
+                    application, and the user needs of secondary and tertiary
+                    students.
+                </p>
+            </div>
+
+            <p>
+                In order to achieve the research objectives, we followed a
+                user-centered design process that consisted of three main
+                stages: empathize, ideate and develop.
+            </p>
+
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 {processSteps.map((step, index) => (
                     <ProcessCard
