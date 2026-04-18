@@ -1,6 +1,6 @@
 import mentaiyaLogo from '@/assets/companies/mentaiyaLogo.png'
 import metevLogo from '@/assets/companies/metevLogo.png'
-import sarcLogo from '@/assets/companies/sarcLogo.svg'
+import sarcLogo from '@/assets/companies/sarcLogo.png'
 import ExperienceItem from './components/ExperienceItem'
 import ExperienceDetails from './components/ExperienceDetails'
 import VideoPlayer from './components/VideoPlayer'
@@ -90,7 +90,7 @@ export default function Experience() {
     return (
         <section id="experience" className="pt-4 lg:pt-8">
             <h1 className="font-source-sans">Work Experiences</h1>
-            <div className="flex  grid-cols-2 flex-col lg:grid lg:grid-cols-[3fr_5fr]">
+            <div className="flex grid-cols-2 flex-col lg:grid lg:grid-cols-[3fr_5fr]">
                 <div className="subsection">
                     <ul className="flex flex-col gap-2 lg:mt-4 lg:gap-4">
                         {experiences.map((exp) => (

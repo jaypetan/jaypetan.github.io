@@ -56,12 +56,9 @@ export default function Project() {
     ]
     return (
         <>
-            <section
-                id="projects"
-                className="flex flex-col p-4 lg:p-8"
-            >
+            <section id="projects" className="flex flex-col p-4 lg:p-8">
                 <h1>Projects</h1>
-                <div className="mt-4 sm:mt-8 grid w-full grid-rows-5 gap-4">
+                <div className="mt-4 grid w-full grid-rows-5 gap-4 sm:mt-8">
                     {projectsData.map((project, index) => (
                         <ProjectCard
                             key={index}

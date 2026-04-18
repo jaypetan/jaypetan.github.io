@@ -1,16 +1,14 @@
-import Experience from './components/experience'
-import Footer from './components/footer'
-import Hero from './components/hero'
-import Project from './components/project'
+import { Navigate, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import NlbCaseStudy from './pages/NlbCaseStudy'
 
 function App() {
     return (
-        <>
-            <Hero />
-            <Experience />
-            <Project />
-            <Footer />
-        </>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/nlb-case-study" element={<NlbCaseStudy />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
     )
 }
 
