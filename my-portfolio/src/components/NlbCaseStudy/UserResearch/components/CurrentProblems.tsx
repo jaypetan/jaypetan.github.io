@@ -12,7 +12,7 @@ export default function CurrentProblems() {
 
     return (
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-            <div className="flex flex-col gap-12 text-end">
+            <div className="flex flex-col gap-4 text-end sm:gap-12">
                 <h3 className="text-gray-400">
                     What are the current problems?
                 </h3>
@@ -22,7 +22,7 @@ export default function CurrentProblems() {
                             key={problem.id}
                             className="flex flex-row items-center justify-end gap-4"
                         >
-                            <p className="text-2xl! font-bold">
+                            <p className="font-bold sm:text-2xl!">
                                 {problem.description}
                             </p>
                             <FontAwesomeIcon

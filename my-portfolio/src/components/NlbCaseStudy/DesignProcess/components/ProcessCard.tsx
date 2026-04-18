@@ -16,18 +16,18 @@ export default function ProcessCard({
 }) {
     return (
         <div
-            className={`flex flex-col justify-between rounded-2xl border-2 border-orange-100 p-6 shadow-lg ${className}`}
+            className={`flex flex-col items-center justify-between rounded-2xl border-2 border-orange-100 p-4 shadow-lg sm:p-6 ${className}`}
         >
             <div className="flex flex-col gap-4">
                 <FontAwesomeIcon
                     icon={icon}
-                    size="4x"
-                    className="text-orange-400"
+                    className="text-5xl text-orange-400 sm:text-7xl"
                 />
-                <h1 className="text-2xl font-semibold">{title}</h1>
+                <h1 className="font-semibold">{title}</h1>
                 <p className="text-gray-600">{description}</p>
             </div>
-            <div className="mt-4 rounded-2xl bg-gray-200 px-8 py-6 shadow-md">
+
+            <div className="mt-4 w-full rounded-2xl bg-gray-200 px-4 py-2 shadow-md sm:px-8 sm:py-6">
                 <h3 className="mb-2 text-lg font-bold">What We Did:</h3>
                 <ul className="list-none space-y-4 text-gray-600">
                     {whatWeDid.map((item, index) => (

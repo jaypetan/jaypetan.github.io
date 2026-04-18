@@ -25,19 +25,21 @@ export default function WhySeatBooking() {
 
     return (
         <div>
-            <h3 className="mb-12 text-gray-400">Why focus on seat booking?</h3>
-            <div className="grid grid-cols-1 gap-24 lg:grid-cols-2">
+            <h3 className="mb-4 text-gray-400 sm:mb-12">
+                Why focus on seat booking?
+            </h3>
+            <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-24">
                 {keyFindings.map((finding, index) => (
                     <div
                         key={index}
-                        className="grid grid-rows-[1fr_1fr] gap-12"
+                        className="grid grid-rows-[1fr_1fr] gap-4 lg:gap-12"
                     >
                         <div className="flex flex-col gap-4">
                             <h1 className="font-bold">{finding.value}%</h1>
                             <p className="text-gray-600">{finding.text}</p>
                         </div>
                         <div
-                            className="h-12 w-full overflow-hidden rounded-full bg-orange-200 shadow-lg"
+                            className="h-8 w-full overflow-hidden rounded-full bg-orange-200 shadow-lg sm:h-12"
                             role="progressbar"
                             aria-valuenow={finding.value}
                             aria-valuemin={0}

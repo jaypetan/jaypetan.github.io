@@ -7,10 +7,16 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 export default function DesignProcess() {
+    // Staggered offsets for the process cards
     const staggeredOffsets = [
         'lg:mt-0 lg:mb-[240px]',
         'lg:mt-[120px] lg:mb-[120px]',
         'lg:mt-[240px] lg:mb-0',
+    ]
+
+    const researchObjectives = [
+        'To understand the existing problems in the NLB mobile application, and the user needs of secondary and tertiary students.',
+        'In order to achieve the research objectives, we followed a user-centered design process that consisted of three main stages: empathize, ideate and develop.',
     ]
 
     const processSteps = [
@@ -48,24 +54,16 @@ export default function DesignProcess() {
     ]
 
     return (
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-4 sm:gap-12">
             <Header number="2" title="Design Process" />
             <div>
                 <h2 className="font-bold">Research Objectives :</h2>
-                <p>
-                    To understand the existing problems in the NLB mobile
-                    application, and the user needs of secondary and tertiary
-                    students.
-                </p>
+                <p>{researchObjectives[0]}</p>
             </div>
 
-            <p>
-                In order to achieve the research objectives, we followed a
-                user-centered design process that consisted of three main
-                stages: empathize, ideate and develop.
-            </p>
+            <p>{researchObjectives[1]}</p>
 
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            <div className="grid grid-cols-1 justify-items-center gap-8 lg:grid-cols-3">
                 {processSteps.map((step, index) => (
                     <ProcessCard
                         key={index}
