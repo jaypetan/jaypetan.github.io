@@ -5,6 +5,7 @@ import {
     faLightbulb,
     faUsers,
 } from '@fortawesome/free-solid-svg-icons'
+import FadeInOnLoad from '../sharedComponents/FadeInOnLoad'
 
 export default function DesignProcess() {
     // Staggered offsets for the process cards
@@ -65,14 +66,15 @@ export default function DesignProcess() {
 
             <div className="grid grid-cols-1 justify-items-center gap-8 lg:grid-cols-3">
                 {processSteps.map((step, index) => (
-                    <ProcessCard
-                        key={index}
-                        icon={step.icon}
-                        title={step.title}
-                        description={step.description}
-                        whatWeDid={step.whatWeDid}
-                        className={staggeredOffsets[index] ?? 'lg:mt-0'}
-                    />
+                    <FadeInOnLoad key={index} index={index}>
+                        <ProcessCard
+                            icon={step.icon}
+                            title={step.title}
+                            description={step.description}
+                            whatWeDid={step.whatWeDid}
+                            className={staggeredOffsets[index] ?? 'lg:mt-0'}
+                        />
+                    </FadeInOnLoad>
                 ))}
             </div>
         </div>

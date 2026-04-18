@@ -1,6 +1,7 @@
 import landingImage from '@/assets/nlbCaseStudy/landing-page.png'
 import { faBolt, faObjectGroup } from '@fortawesome/free-solid-svg-icons'
 import Card from '../../sharedComponent/Card'
+import FadeInOnLoad from '../../../sharedComponents/FadeInOnLoad'
 
 export default function LandingLayout() {
     const landingDescription = [
@@ -39,12 +40,14 @@ export default function LandingLayout() {
                 />
                 <div className="grid items-center justify-center gap-2 sm:grid-cols-1 sm:gap-8">
                     {landingCards.map((card, index) => (
-                        <Card
-                            key={index}
-                            icon={card.icon}
-                            title={card.title}
-                            description={card.description}
-                        />
+                        <FadeInOnLoad key={index} index={index}>
+                            <Card
+                                key={index}
+                                icon={card.icon}
+                                title={card.title}
+                                description={card.description}
+                            />
+                        </FadeInOnLoad>
                     ))}
                 </div>
             </div>

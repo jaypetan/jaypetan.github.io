@@ -22,6 +22,7 @@
         "@fortawesome/free-solid-svg-icons": "^7.0.0",
         "@fortawesome/react-fontawesome": "^0.2.3",
         "@tailwindcss/vite": "^4.1.11",
+        "motion": "^12.38.0",
         "react": "^19.1.1",
         "react-dom": "^19.1.1",
         "react-player": "^3.3.1",

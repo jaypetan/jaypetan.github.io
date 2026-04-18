@@ -1,6 +1,7 @@
 import postBookingImage from '@/assets/nlbCaseStudy/post-booking.png'
 import Card from '../../sharedComponent/Card'
 import { faClockRotateLeft } from '@fortawesome/free-solid-svg-icons/faClockRotateLeft'
+import FadeInOnLoad from '../../../sharedComponents/FadeInOnLoad'
 
 export default function PostBookingLayout() {
     const postBookingDescription = [
@@ -23,11 +24,13 @@ export default function PostBookingLayout() {
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-[2fr_3fr]">
                 <div className="flex items-center justify-center">
-                    <Card
-                        icon={postBookingCards[0].icon}
-                        title={postBookingCards[0].title}
-                        description={postBookingCards[0].description}
-                    />
+                    <FadeInOnLoad>
+                        <Card
+                            icon={postBookingCards[0].icon}
+                            title={postBookingCards[0].title}
+                            description={postBookingCards[0].description}
+                        />
+                    </FadeInOnLoad>
                 </div>
                 <img
                     className="row-end-1 shadow-lg sm:row-end-auto"

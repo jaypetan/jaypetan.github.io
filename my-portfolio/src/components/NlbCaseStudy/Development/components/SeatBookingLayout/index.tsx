@@ -8,6 +8,7 @@ import {
     faCircle,
 } from '@fortawesome/free-solid-svg-icons'
 import Card from '../../sharedComponent/Card'
+import FadeInOnLoad from '../../../sharedComponents/FadeInOnLoad'
 
 export default function SeatBookingLayout() {
     const Arrow = () => (
@@ -60,14 +61,17 @@ export default function SeatBookingLayout() {
             <div className="flex items-center justify-center">
                 <Arrow />
             </div>
-            <div className="grid grid-cols-1 justify-items-center gap-4 sm:gap-8 lg:grid-cols-3">
+            <div className="mx-auto grid grid-cols-1 gap-4 sm:gap-8 lg:grid-cols-3">
                 {seatBookingCards.map((card, index) => (
-                    <Card
-                        key={index}
-                        icon={card.icon}
-                        title={card.title}
-                        description={card.description}
-                    />
+                    <FadeInOnLoad key={index} index={index}>
+                        <Card
+                            key={index}
+                            icon={card.icon}
+                            title={card.title}
+                            description={card.description}
+                            hfull
+                        />
+                    </FadeInOnLoad>
                 ))}
             </div>
         </div>

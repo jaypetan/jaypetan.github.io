@@ -1,3 +1,5 @@
+import { motion } from 'motion/react'
+
 export default function WhySeatBooking() {
     const keyFindings = [
         {
@@ -46,9 +48,12 @@ export default function WhySeatBooking() {
                             aria-valuemax={100}
                             aria-label={`Key finding ${finding.value} percent`}
                         >
-                            <div
+                            <motion.div
                                 className="h-full rounded-full bg-orange-400 transition-all duration-700"
                                 style={{ width: `${finding.value}%` }}
+                                initial={{ width: 0 }}
+                                whileInView={{ width: `${finding.value}%` }}
+                                viewport={{ once: true, amount: 0.5 }}
                             />
                         </div>
                     </div>

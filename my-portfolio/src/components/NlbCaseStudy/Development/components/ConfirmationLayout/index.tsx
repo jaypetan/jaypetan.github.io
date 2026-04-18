@@ -1,6 +1,7 @@
 import confirmationImage from '@/assets/nlbCaseStudy/confirmation-page.png'
 import Card from '../../sharedComponent/Card'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons/faCheckCircle'
+import FadeInOnLoad from '../../../sharedComponents/FadeInOnLoad'
 
 export default function ConfirmationLayout() {
     const confirmationDescription = [
@@ -24,11 +25,13 @@ export default function ConfirmationLayout() {
             <div className="grid gap-2 sm:grid-cols-2 sm:gap-8">
                 <img src={confirmationImage} alt="Confirmation Layout" />
                 <div className="flex items-center justify-center">
-                    <Card
-                        icon={confirmationCards[0].icon}
-                        title={confirmationCards[0].title}
-                        description={confirmationCards[0].description}
-                    />
+                    <FadeInOnLoad>
+                        <Card
+                            icon={confirmationCards[0].icon}
+                            title={confirmationCards[0].title}
+                            description={confirmationCards[0].description}
+                        />
+                    </FadeInOnLoad>
                 </div>
             </div>
         </div>
