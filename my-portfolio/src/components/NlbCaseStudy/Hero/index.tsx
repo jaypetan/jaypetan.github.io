@@ -5,8 +5,11 @@ export default function Hero() {
     return (
         <div className="mt-12 flex flex-col items-center justify-center gap-4">
             <div className="mb-8 flex w-full flex-row items-baseline justify-between">
-                <h1 className="mb-4 text-4xl font-bold">NLB Case Study</h1>
-                <h2 className="mb-4 text-xl font-semibold text-gray-400">
+                <div className="flex flex-col">
+                    <h1 className="text-4xl font-bold">NLB Case Study</h1>
+                    <p className="text-lg text-gray-600">By Tan Jun Peng</p>
+                </div>
+                <h2 className="text-xl font-semibold text-gray-400">
                     18/4/2026
                 </h2>
             </div>
