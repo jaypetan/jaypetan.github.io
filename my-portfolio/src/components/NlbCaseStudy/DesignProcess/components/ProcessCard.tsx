@@ -16,7 +16,7 @@ export default function ProcessCard({
 }) {
     return (
         <div
-            className={`grid grid-rows-[2fr_1fr_3fr] rounded-2xl border-2 border-orange-200 p-6 shadow-lg ${className}`}
+            className={`grid grid-rows-[2fr_1fr_3fr] rounded-2xl border-2 border-orange-100 p-6 shadow-lg ${className}`}
         >
             <div className="flex flex-col gap-4">
                 <FontAwesomeIcon icon={icon} size="4x" />
